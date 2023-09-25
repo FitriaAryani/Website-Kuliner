@@ -1,0 +1,257 @@
+:root {
+  --primary: #f7f5eb;
+  --bg: #a0c3d2;
+  --text: #146c94;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary);
+  margin: 0px;
+  padding: 0px;
+}
+
+/*NAVBAR*/
+.navbar {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+.logo a {
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  font-family: "Poppins";
+  color: var(--primary);
+  text-decoration: none;
+}
+.logo:hover {
+  color: var(--primary);
+}
+.navbar-nav {
+  float: right;
+}
+nav {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 50px;
+  position: fixed;
+  top: 0px;
+  position: -webkit-sticky;
+  justify-content: space-around;
+  background: var(--bg);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  color: var(--text);
+  font-weight: bold;
+  text-align: right;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+/*HOME*/
+.home {
+  padding: 220px 110px;
+  background-image: url(gambar/1.png);
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home div {
+  text-align: center;
+}
+
+.blue {
+  color: var(--primary);
+  padding: 8px 15px;
+  border-radius: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.line {
+  width: 200px;
+  height: 3px;
+  background: #f7f5eb;
+  margin: 5px auto;
+  border-radius: 5px;
+}
+
+/*BLOG*/
+.blog {
+  padding: 100px 100px;
+  position: static;
+  padding-left: 60px;
+  padding-right: 50px;
+}
+.product {
+  font-size: 25px;
+  color: var(--text);
+  font-weight: bolder;
+}
+.view {
+  color: var(--text);
+  text-decoration: none;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text);
+}
+.heading h1 {
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0px auto;
+  grid-gap: 30px;
+}
+img {
+  object-fit: cover;
+}
+
+.grid > article {
+  box-shadow: 2px 2px 2px 2px var(--bg);
+  border-radius: 20px;
+  background: var(--primary);
+  width: 300px;
+}
+
+.konten b {
+  color: var(--text);
+  font-size: 18px;
+}
+.konten p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/*ABOUT*/
+.about {
+  padding: 90px 100px;
+}
+.about h1 {
+  color: #146c94;
+  font-weight: bold;
+  font-size: 30px;
+}
+.about-main {
+  display: flex;
+}
+.about-text {
+  width: 50%;
+  display: contents;
+}
+.about-text p {
+  font-size: 15px;
+  text-align: left;
+}
+.about-img {
+  text-align: right;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/*CONTACT*/
+.contact {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  color: black;
+}
+.contact .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: var(--primary);
+  border: 1px solid #146c94;
+}
+.contact .input-group input {
+  width: 30%;
+  padding: 10px;
+  font-size: 20px;
+  background: none;
+  color: black;
+}
+.contact .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 15px;
+  color: var(--primary);
+  background-color: var(--text);
+  cursor: pointer;
+}
+
+/*Footer*/
+footer {
+  background-color: #a0c3d2;
+  text-align: center;
+  padding: 1px 0px;
+  margin-top: 50px;
+}
+
+footer .social {
+  padding: 5px;
+}
+footer .social a {
+  color: var(--text);
+}
+footer .social a:hover {
+  color: var(--primary);
+}
+
+footer .links a {
+  color: #146c94;
+  margin: 10px;
+  text-decoration: none;
+}
+footer .links a:hover {
+  color: #f7f5eb;
+}
+footer .credit {
+  font-size: 15px;
+  margin: 5px;
+}
+footer .credit a {
+  color: var(--text);
+  text-decoration: none;
+}
